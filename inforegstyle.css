@@ -1,0 +1,7 @@
+*{
+    background: url('bg1.png');
+    background-size: cover;
+    background-attachment: fixed;
+    font-family: cursive;
+    font-style: italic;
+}

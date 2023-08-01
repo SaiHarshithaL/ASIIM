@@ -1,0 +1,74 @@
+<html>
+    <head>
+      <style>
+        body
+       {
+           background:url("bg1.webp");
+           background-size:100%;
+           height:100%;
+           width: 100%;
+       }
+       
+       ::-webkit-scrollbar {
+           width: 12px;
+       }
+
+       ::-webkit-scrollbar-thumb {
+           background: linear-gradient(#000,#3ab09e);
+           border-radius: 6px;
+       }
+   
+       
+       #idea{
+           position: absolute;
+           top: 180px;
+           left: 450px;
+           width: 300px;
+           
+           padding: 30px;
+           box-shadow: 5px;
+           border-radius: 30px;
+          background:rgba(15, 216, 123, 0.6);
+       }
+       input[type=text],input[type=password] {
+       width: 100%;
+       size:150em;
+       padding: 12px 20px;
+       margin: 8px 0;
+       box-sizing: border-box;
+       border: none;
+       border-bottom: 2px solid rgb(91, 88, 88);
+       }
+       button a{
+         color:blue;
+         font-size:medium;
+        font-family:cursive;
+        text-decoration: none;
+}
+       button{
+background-color: pink;
+height:3em;
+width:fit-content;
+border-radius: 25%;
+}
+       button:hover {
+           box-shadow: 0 5px 30px 0 #88d8c0 inset,0 5px 30px 0 #88d8c0, 0 5px 30px 0 #88d8c0 inset,0 5px 30px 0 #88d8c0;
+           /* <!-- background-color: aquamarine; --> */
+       }
+</style>   
+<script>
+ function Previous() {
+       window.history.back()
+   }
+</script>  
+    </head>
+    <body>  
+       
+        <div id="idea">
+            <label><h2><center>YOU HAVE ALREADY SUBMITTED YOUR PROTOTYPE<center></h2></label>
+                <br>
+                <center><button onclick="Previous()">BACK</button></center>
+    </form></div>
+</center>  
+    </body>
+</html>

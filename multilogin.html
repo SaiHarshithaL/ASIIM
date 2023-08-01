@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+   <meta name="viewport"content="with=device-width,initialscale=1.0">
+   <link rel="stylesheet" href="MULTILOGIN_WORKING.css">
+    <title>ASSIM</title>
+    <script>
+        function validateForm(){
+    var x=document.getElementById("usertype").value;
+                if(x=='1')
+                {
+                    alert("select your role ");
+                    return false;
+                }
+            }
+        </script>
+</head>
+
+<body>
+        <!-- navigation-->
+  <section>
+    <div class="Nav"> 
+        <nav class="navbar">
+        <div class="navbar-container container">
+            <input type="checkbox" name="" id="">
+            <div class="hamburger-lines">
+                <span class="line line1"></span>
+                <span class="line line2"></span>
+                <span class="line line3"></span>
+            </div>
+            <ul class="menu-items">
+                <li><a href="sih.html">Home</a></li>
+                
+            </ul>
+            <h1 class="logo">ASIIM</h1>
+        </div>
+    </nav>
+    </div>
+<!-- NAVBAR CLOSE-->
+</section>
+
+
+
+<!--login form-->
+<section style="background-image: url('bg1.webp');
+ background-size: cover; max-height:fit-content; padding-top:80px; margin-bottom: 10px;">
+    <center>
+      <form action="multilogin.php" method="post" onsubmit="return validateForm()">
+        <div class="welcome_msg_login">WELCOME TO !</div> 
+<div class="welcome_msg_login"> 
+  <span>LOGIN</span>
+  <span>PAGE</span>
+</div>
+        <div class="logincontainer">
+        <table>
+         <tr>   <td><div class="input-container">
+                <input type="text" name="username" id="username" required=""/>
+                <label style="color:black;">USERNAME</label>
+                     </td>
+        </tr>
+
+        <tr>   <td><div class="input-container">
+            <input type="password"  class="output" name="pwd" id="pwd" required=""/>
+            <label style="color:black;">PASSWORD</label>
+        </td>
+        </tr>
+    
+
+        <tr>
+            <td>
+                <center><select class="selection_box" name="usertype" id="usertype"  required="">
+                    <option value="1"><i>SELECT YOUR ROLE</i></option>
+                    <option value="admin" ><i>ADMIN</i></option>
+                    <option value="expert"><I>EXPERT</I></option>
+                    <option value="user">USER</option>
+                </center></td>
+        </tr>
+    <td><br></td>
+        <tr>
+            <td ><center>
+               <input  class="login_button" type="submit" value="login" name="login">&emsp;&ensp;
+               <input  class="login_button" type="submit" value="reset" name="reset">
+            </center>
+               <td>  
+        </tr>
+<td><br></td>
+                
+        <tr>
+                <td> <center><a  style="color:black" ; href="setpassword.html">forget password?</a></center></td>
+        </tr>
+        <tr><td><br></td></tr>
+        <tr>
+            <td>
+                <center><p>Dont have an Account ?<br></p></center>
+            </td>
+        </tr>
+        <tr>
+        <td>
+            <center><a style="color:black"; href="hello.html">Sign-up</a></center>
+            </td>
+        </tr>
+        </table>
+        
+    </div>
+    <br><br>
+    </form>>
+</center>
+        
+
+</section>
+</body>
+</html>
